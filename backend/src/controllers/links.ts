@@ -22,27 +22,24 @@ async function postLink(req:Request, res:Response){
     res.status(201).json(link);
 }
 
-function getLink(req:Request, res:Response){
-    /* const code = req.params.code as string;
-    const link = links.find(item => item.code === code);
+async function getLink(req:Request, res:Response){
+    const code = req.params.code as string;
+    const link = await linksRepository.findByCode(code);
     if(!link){
         res.sendStatus(404);
     } else {
         res.json(link);
     }
-    */
 }
 
-function hitLink(req:Request, res:Response){
-    /* const code = req.params.code as string;
-    const index = links.findIndex(item => item.code === code);
-    if (index === -1){
+async function hitLink(req:Request, res:Response){
+    const code = req.params.code as string;
+    const link = await linksRepository.hits(code);
+    if (!link){
         res.sendStatus(404);
     } else {
-        links[index].hits!++;
-        res.json(links[index]);
+        res.json(link);
     }
-    */
 }
 
 export default {
