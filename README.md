@@ -15,13 +15,16 @@ Para executar o frontend:
 2) yarn install
 3) yarn start
 
-Endereço para o backend (api):
-http://54.145.78.111:3001/
+Endereço para o backend (api): <br/>
+http://54.145.78.111:3001/ <br/>
 http://api.beccon-pitu.tk:3001/
 
 Endereço para o frontend:
-http://www.beccon-pitu.tk/
+http://www.beccon-pitu.tk/ <br/>
 http://www.beccon-pitu.tk.s3-website.us-east-2.amazonaws.com/
 
-Repositório do git:
+URL para acessar o demo:
+http://www.beccon-pitu.tk/ <br/>
+
+Repositório do git: <br/>
 https://github.com/beccon/pitu
